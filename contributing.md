@@ -1,6 +1,6 @@
-MassEnergize Software Dev+QA Work Flow: v0.1.0
-Initial version: 2/14/20
-PLUS meeting notes 2/17/2020 (Brad, Ellen, Steve, Aimee, Satra, Kaat)
+#MassEnergize Software Development Work Flow: v0.1.0
+
+*Initial version: 2/17/20*
 
 This is the proposed process for software development and testing, starting from identifying bugs or feature requests, through deployment to the production site.  The main goal is to enable team members to know which issues  have been fixed and deployed, to efficiently test and avoid duplication of effort.
 
