@@ -15,4 +15,7 @@ and simple instructions to how to use custom components that have been created.
 <a href="https://community-dev.massenergize.org/wayland/">Homepage</a> | `Homepage.js`, `WelcomeImages.js`, `IconBoxTable.js`, `EventHomepageSection.js`
 <a href="https://community-dev.massenergize.org/wayland/actions">All Actions Page</a> | `ActionsPage.js`, `Cart.js`, `Funnel.js`
 <a href="https://community-dev.massenergize.org/wayland/actions">Action Cards On Actions Page</a> | `PhotoSensitiveAction.js` `ChooseHHForm.js`
+<a href="https://community-dev.massenergize.org/wayland/actions" target="_blank">Individual Action Page</a> | `OneActionPage.js` `ChooseHHForm.js`, `StoryForm.js`, `Cart.js`
+<a href="https://community-dev.massenergize.org/wayland/teams">Teams Page</a> | `TeamsPage.js`, `TeamsInfoModal.js` `TeamsStatsBars.js`
+<a href="https://community-dev.massenergize.org/wayland/teams">One Team</a> | `TeamsInfoModal.js` `TeamsStatsBars.js`
 
