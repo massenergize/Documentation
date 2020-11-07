@@ -5,3 +5,10 @@ and simple instructions to how to use custom components that have been created.
 
 ## TABLE OF CONTENT 
 * <a href="#file-to-page"> Which files show what page?  </a>
+
+
+
+#### WHICH FILES SHOW WHAT PAGE 
+ **Page** | **Related Files** 
+ ---------| ----------------- 
+  <a href="https://community-dev.massenergize.org/">Community Selection Page</a> | `CommunitySelectPage.js`
