@@ -11,4 +11,8 @@ and simple instructions to how to use custom components that have been created.
 #### WHICH FILES SHOW WHAT PAGE 
  **Page** | **Related Files** 
  ---------| ----------------- 
-  <a href="https://community-dev.massenergize.org/">Community Selection Page</a> | `CommunitySelectPage.js`
+<a href="https://community-dev.massenergize.org/">Community Selection Page</a> | `CommunitySelectPage.js`
+<a href="https://community-dev.massenergize.org/wayland/">Homepage</a> | `Homepage.js`, `WelcomeImages.js`, `IconBoxTable.js`, `EventHomepageSection.js`
+<a href="https://community-dev.massenergize.org/wayland/actions">All Actions Page</a> | `ActionsPage.js`, `Cart.js`, `Funnel.js`
+<a href="https://community-dev.massenergize.org/wayland/actions">Action Cards On Actions Page</a> | `PhotoSensitiveAction.js` `ChooseHHForm.js`
+
