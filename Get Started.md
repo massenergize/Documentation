@@ -11,7 +11,7 @@ and simple instructions to how to use custom components that have been created.
 * <a href="#developer-workflow"> ME Developer Workflow and Push Protocol</a>
 * <a href="#"> What To Know About ME Custom Components </a>
 * <a href="#"> What Logic Makes Each Page Tick! </a>
-* <a href="#"> ME Project Boards And What They Mean </a>
+* <a href="#me-board-flow"> ME Project Boards And What They Mean </a>
 
 
 
@@ -102,6 +102,35 @@ Lastly, use the **bolt** icon in the  `frontend` slack channel to create a `pull
 You are all set now, enjoy your free time :confetti_ball: :rofl:
 
 
+### <a href="me-board-flow">ME PROJECT BOARDS FLOW AND THEIR MEANINGS </a>
 
+There are currently about 5 boards on the community portal project board on github. These boards are used to organize and indicate stages that issues have to go through in order to get fixed. 
+Where developers && testers place tickets may indicate whether or not a bug or an enhancement is being worked on, an issue can even be worked on, or a feature is ready to be tested. 
+The names and description of the available boards are as follows. 
+
+1. Backlog 
+2. To do 
+3. In progress 
+4. QA - Ready To Be Tested 
+5. Validated - Ready To Be Shipped 
+
+### Backlog 
+This is where all the tickets are placed when they are first made. Everything starts here! 
+
+###  To do 
+When testers create tickets and they need an issue to catch a developer's eye, this is where it is found. Developers are supposed to finish off any available tickets on the **To do** board, before they move over to the **Backlog** to find any other interesting tickets. 
+
+### In Progress 
+When a developer is ready to work on a ticket they have been assigned to on the **Todo** board, the tickets  have to be moved from **To do** onto the **In progress** board -- this is also another way to notify the team of what is currently being worked on.
+When the matters related to a ticket are fixed in code and ready to be merged, the developer has to **`close`** the tickets and leave them on the **In progress** board. <br/>
+_TIP: To avoid having to manually close all your tickets, just link the tickets to your PR, they will be closed when the PR is merged_
+
+### QA - Ready To Be Tested 
+When a PR is tested locally and then merged into development by **Brad** or any reviewer, tickets that passed  will remain closed. **Brad** will then deploy the development branch to the development website for other testers to test. After, he will then move the related closed tickets from the **In progress** board onto the **QA - Ready To Be Tested**.
+When other testers go over the tickets and they fail, the testers open the related tickets again, while it is in **QA -....**. When that happens, github notifies the assigned developer right away to take another shot at the ticket. When the developer is ready to try again, the ticket has to be moved from **QA** back to **In progress**, for the process to repeat itself :fire: 
+
+### Validated And Ready To Ship To PROD
+In the case where all closed tickets pass testing, testers will move the cards from **QA-....** into **Validted And Ready To Ship To PROD** 
+:confetti_ball:
 
 
