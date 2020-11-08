@@ -73,27 +73,26 @@ Then select **Daily Standup** from the options as shown<br/>
 Now fill the form appropriately with what you have been up to, and what you intend to tackle, then submit. 
 <img src="./images/standup-form.png" />
 
-**Pushing to github** <br/>
+**PUSHING TO GITHUB** <br/>
 In no circumstance should you ever work directly in the development branch. You should always branch from the development branch and advisable to give an appropriate branch name that describes what the changes and enhancements that branch covers. <br/>
 The **`development`** branch always has the latest updates from other ME developers -- its better to branch from there. <br/>
 While the development branch is always up to date, the **`master`** branch just contains the codebase of the current deployment version of what is on the production website. Development branch is only merged into master when all vetted features are pushed to prod. 
 <br/>
-_**Done and ready to merge?**_ <br/>
+**Done and ready to merge?** <br/>
 When you are done working and you are ready to make the team aware of your working features, here are the steps to take 
 <br/>
 1. Make a `pull request` from your branch to `development`. 
 2. Describe the changes that you are shipping to development in the pull request description box that github provides. 
 3. Link the related tickets to the pull request. 
-4. After, invite `Brad` and `Sam` to review your pull request.<br/>
+4. Then, invite `Brad` and `Sam` to review your pull request.<br/>
 _Linking issues and requesting reviewers attention can be done on the right pane of your PR interface on github_ <br/>
 <img src="./images/right-pane.png"/>
 
-
-_**Please note that if Brad and Sam are not available, feel free to tag any other developers available that might be free at that moment**_
+_**Please note that if Brad and Sam are not available, you are free to tag any other developers available that might be free at that moment to test your features**_
 <br/>
 
 
-_**Notify all on slack**_<br/>
+**Notify all on slack**<br/>
 Lastly, use the **bolt** icon in the  `frontend` slack channel to create a `pull request` notification for all as shown below. 
 
 <img src="./images/pr.png"/>
