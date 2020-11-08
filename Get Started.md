@@ -6,11 +6,12 @@ user portal **(Made with React)**. This board will give directions to very trick
 and simple instructions to how to use custom components that have been created.
 
 ### TABLE OF CONTENT 
-* <a href="#file-to-page"> Which files show what page?  </a>
-* <a href="#setting-your-env"> Configuring your working environment (is_prod,is_local,is_canary, is_dev, is_sandbox) </a>
-* <a href="#developer-workflow"> ME developer workflow and push protocol</a>
-* <a href="#"> Want to know how ME custom components work? </a>
-* <a href="#"> Want to know how each ME page works? </a>
+* <a href="#file-to-page"> Which Files Show What Page? </a>
+* <a href="#setting-your-env"> Configuring Your Working Environment(is_prod,is_local,is_canary, is_dev, is_sandbox) </a>
+* <a href="#developer-workflow"> ME Developer Workflow and Push Protocol</a>
+* <a href="#"> What To Know About ME Custom Components </a>
+* <a href="#"> What Logic Makes Each Page Tick! </a>
+* <a href="#"> ME Project Boards And What They Mean </a>
 
 
 
@@ -65,7 +66,8 @@ When you are assigned, here  are a few things to note.
 
 **Slack Workflow Notification**<br/>
 Before you get started with any assigned tickets on github, or just randomly fixing non-ticketed bugs, notify the team! 
-Use the **team_updates** channel to do this. 
+The first thing todo is to go to the <a href="https://github.com/orgs/massenergize/projects/3">community portal github board</a> and move the tickets you are currently working on from `Backlog or To do` into `in progress`. <br/>
+After, use the **team_updates** channel to do these:
 Use the bolt icon <br/>
 <img src="./images/bolt.png"/><br/>
 Then select **Daily Standup** from the options as shown<br/>
@@ -74,14 +76,14 @@ Now fill the form appropriately with what you have been up to, and what you inte
 <img src="./images/standup-form.png" />
 
 **PUSHING TO GITHUB** <br/>
-In no circumstance should you ever work directly in the development branch. You should always branch from the development branch and advisable to give an appropriate branch name that describes what the changes and enhancements that branch covers. <br/>
-The **`development`** branch always has the latest updates from other ME developers -- its better to branch from there. <br/>
-While the development branch is always up to date, the **`master`** branch just contains the codebase of the current deployment version of what is on the production website. Development branch is only merged into master when all vetted features are pushed to prod. 
+In no circumstance should you ever work directly in the development branch. You should always branch from the development branch and its adviced to give an appropriate branch name that describes what changes and enhancements that branch covers. <br/>
+The **`development`** branch always has the latest updates from other ME developers -- its best to branch from there. <br/>
+While the development branch is always up to date, the **`master`** branch just contains the codebase of the current deployment version of what is on the production website. The development branch is only merged into master when all vetted features are pushed to prod. 
 <br/>
 **Done and ready to merge?** <br/>
 When you are done working and you are ready to make the team aware of your working features, here are the steps to take 
 <br/>
-1. Make a `pull request` from your branch to `development`. 
+1. Make a `pull request` from your branch into `development`. 
 2. Describe the changes that you are shipping to development in the pull request description box that github provides. 
 3. Link the related tickets to the pull request. 
 4. Then, invite `Brad` and `Sam` to review your pull request.<br/>
@@ -93,7 +95,7 @@ _**Please note that if Brad and Sam are not available, you are free to tag any o
 
 
 **Notify all on slack**<br/>
-Lastly, use the **bolt** icon in the  `frontend` slack channel to create a `pull request` notification for all as shown below. 
+Lastly, use the **bolt** icon in the  `frontend` slack channel to create a `pull request` notification for all, as shown below. 
 
 <img src="./images/pr.png"/>
 
