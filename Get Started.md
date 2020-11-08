@@ -3,12 +3,13 @@ user portal[**Made with React**]. This file will give directions to very tricky,
 <br/> Mind you, the information here is in no way going to take anyone through a **React**, it is just to document the structure of everything, where to find core files,
 and simple instructions to how to use custom components that have been created.
 
-## TABLE OF CONTENT 
+### TABLE OF CONTENT 
 * <a href="#file-to-page"> Which files show what page?  </a>
+* <a href="#"> Configuring your working environment [is_prod,is_local,is_canary, is_dev, is_sandbox] </a>
+* <a href="#"> MassEnergize components and how they work  </a>
 
 
-
-#### WHICH FILES SHOW WHAT PAGE 
+#### <a name="file-to-page">WHICH FILES SHOW WHAT PAGE </a>
  **Page** | **Related Files** 
  ---------| ----------------- 
 <a href="https://community-dev.massenergize.org/">Community Selection Page</a> | `CommunitySelectPage.js`
@@ -16,6 +17,39 @@ and simple instructions to how to use custom components that have been created.
 <a href="https://community-dev.massenergize.org/wayland/actions">All Actions Page</a> | `ActionsPage.js`, `Cart.js`, `Funnel.js`
 <a href="https://community-dev.massenergize.org/wayland/actions">Action Cards On Actions Page</a> | `PhotoSensitiveAction.js` `ChooseHHForm.js`
 <a href="https://community-dev.massenergize.org/wayland/actions" target="_blank">Individual Action Page</a> | `OneActionPage.js` `ChooseHHForm.js`, `StoryForm.js`, `Cart.js`
-<a href="https://community-dev.massenergize.org/wayland/teams">Teams Page</a> | `TeamsPage.js`, `TeamsInfoModal.js` `TeamsStatsBars.js`
-<a href="https://community-dev.massenergize.org/wayland/teams">One Team</a> | `TeamsInfoModal.js` `TeamsStatsBars.js`
+<a href="https://community-dev.massenergize.org/wayland/teams">All Teams Page</a> | `TeamsPage.js`, `TeamsInfoModal.js` `TeamsStatsBars.js`
+<a href="https://community-dev.massenergize.org/wayland/teams">One Team</a> | `TeamsInfoModal.js`, `TeamsStatsBars.js`, `MEModal.js`
+<a href="https://community-dev.massenergize.org/wayland/services">All Service Providers</a> | `ServicesPage.js`, `Funnel.js`
+<a href="https://community-dev.massenergize.org/wayland/services">One Service Provider</a> | `ServicesPage.js`
+<a href="https://community-dev.massenergize.org/wayland/testimonials">All Testimonials Page</a> | `StoriesPage.js`, `StoryForm.js`, `Funnel.js`, `METestimonialCard.js`
+<a href="https://community-dev.massenergize.org/wayland/testimonials">One Testimonial Page</a> | `OneTestimonialPage.js`
+<a href="https://community-dev.massenergize.org/wayland/events">All Events Page</a> | `EventsPageReal.js`, `NewEventsCard.js`
+<a href="https://community-dev.massenergize.org/wayland/events">One Event Page</a> | `OneEventPage.js`
+<a href="https://community-dev.massenergize.org/wayland/impact">Our Impact Page</a> | `impactPage.js`, `Utils.js`
+<a href="https://community-dev.massenergize.org/wayland/aboutus">About Us Page</a> | `AboutUsPage.js`
+<a href="https://community-dev.massenergize.org/wayland/donate">Donate Page</a> | `DonatePage.js`
+<a href="https://community-dev.massenergize.org/wayland/donate">Contact Us Page</a> | `ContactUsPage.js`, `ContactPageForm.js`
+<a href="https://community-dev.massenergize.org/wayland/signin">Login Page </a> | `LoginPage.js`, `LoginForm.js`
+<a href="https://community-dev.massenergize.org/wayland/signup">Registration Page </a> | `RegistrationPage.js`, `RegistrationForm.js`
+<a href="#">All Redux Actions </a> | `userActions.js`, `pageActions.js`, `linkActions.js`
+<a href="#">All Redux Reducers </a> | `reducers/index.js`, `linkReducer.js`, `pageReducer.js`, `userReducer.js`
+<a href="#">Most Configuration Files </a> | `config.json`, `firebaseConfig.js`, `config/index.js`
+<br/>
 
+### <a name="setting-your-env">CONFIGURING YOUR WORKING ENVIRONMENT </a>
+At the time of writing, there are **five** working environments available in MassEnergize. These environments dictate the the kind of data you have access to, and interact with from the backend. You are free to tweak your configuration settings and interact with the data as you wish. <br/>
+**_However, please note that PROD, and CANARY, are not your playground. You may switch to them ONLY to view how real data may look with any new changes you might have made; for all other tests, thats what local and dev modes are for!_**<br/>
+#### How do I switch?
+Easy! kindly move into your `/config/config.json` file and make changes to the bolean values that correspond to the environment you would like to working in. The various combinations that create the working environments are as follows. 
+
+Environment |IS_LOCAL |IS_PROD|IS_SANDBOX|IS_CANARY|
+------------|---------|-------|----------|---------|
+Development| `false` | `false`| `false` | `false`
+Production | `false`| `true` | `false` | `false`
+Canary | `false` | `false` | `false`|`true` 
+Sandbox | `false` | `false` | `true`| `false` 
+Local | `true` | `false` | `false` | `false`
+
+Dont get excited yet. Before you switch to local and expect magic to happen, 
+make sure you have followed <a href="https://massenergize.slite.com/p/note/KWfwNLonZsf4bfGD6CNcJq">this link on how to setup your local backend on ME </a>
+The other environments do not need any setup :fire:. However, due to a recent change ain authentication system, you may not be able to send data to the backend because of token issues. You should set your environment up locally.
