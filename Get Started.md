@@ -43,7 +43,7 @@ and simple instructions to how to use custom components that have been created.
 <br/>
 
 ### <a name="setting-your-env">CONFIGURING YOUR WORKING ENVIRONMENT </a>
-<br/>
+
 **Clone the `development` branch onto your pc locally**<br/>
 **Then `npm install` to get started right away**
  <br/>
