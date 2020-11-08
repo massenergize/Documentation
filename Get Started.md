@@ -8,7 +8,7 @@ and simple instructions to how to use custom components that have been created.
 ### TABLE OF CONTENT 
 * <a href="#file-to-page"> Which files show what page?  </a>
 * <a href="#setting-your-env"> Configuring your working environment (is_prod,is_local,is_canary, is_dev, is_sandbox) </a>
-* <a href="#"> ME developer workflow and push protocol</a>
+* <a href="#developer-workflow"> ME developer workflow and push protocol</a>
 * <a href="#"> Want to know how ME custom components work? </a>
 * <a href="#"> Want to know how each ME page works? </a>
 
@@ -59,7 +59,7 @@ Dont get excited yet. Before you switch to local and expect magic to happen,
 make sure you have followed <a href="https://massenergize.slite.com/p/note/KWfwNLonZsf4bfGD6CNcJq">this link on how to setup your local backend on ME </a><br/>
 The other environments do not need any setup :fire:. <br/>However, due to a recent change in our authentication system, you may not be able to send data to the backend because of token issues. You should set your environment up locally.
 
-### DEVELOPER WORKFLOW AND PUSH PROTOCOL 
+### <a name="#developer-workflow">DEVELOPER WORKFLOW AND PUSH PROTOCOL  </a>
 If you have not been assigned a ticket yet, enjoy your leisure moments as best you can, Kaat is probably creating a ticket for you as you read :rofl:. You will be assigned soon.
 When you are assigned, here  are a few things to note.
 
