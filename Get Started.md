@@ -59,7 +59,7 @@ Dont get excited yet. Before you switch to local and expect magic to happen,
 make sure you have followed <a href="https://massenergize.slite.com/p/note/KWfwNLonZsf4bfGD6CNcJq">this link on how to setup your local backend on ME </a><br/>
 The other environments do not need any setup :fire:. <br/>However, due to a recent change in our authentication system, you may not be able to send data to the backend because of token issues. You should set your environment up locally.
 
-### <a name="#developer-workflow">DEVELOPER WORKFLOW AND PUSH PROTOCOL  </a>
+### <a name="developer-workflow">DEVELOPER WORKFLOW AND PUSH PROTOCOL  </a>
 If you have not been assigned a ticket yet, enjoy your leisure moments as best you can, Kaat is probably creating a ticket for you as you read :rofl:. You will be assigned soon.
 When you are assigned, here  are a few things to note.
 
@@ -73,8 +73,32 @@ Then select **Daily Standup** from the options as shown<br/>
 Now fill the form appropriately with what you have been up to, and what you intend to tackle, then submit. 
 <img src="./images/standup-form.png" />
 
-... to be continued
+**Pushing to github** <br/>
+In no circumstance should you ever work directly in the development branch. You should always branch from the development branch and advisable to give an appropriate branch name that describes what the changes and enhancements that branch covers. <br/>
+The **`development`** branch always has the latest updates from other ME developers -- its better to branch from there. <br/>
+While the development branch is always up to date, the **`master`** branch just contains the codebase of the current deployment version of what is on the production website. Development branch is only merged into master when all vetted features are pushed to prod. 
+<br/>
+_**Done and ready to merge?**_ <br/>
+When you are done working and you are ready to make the team aware of your working features, here are the steps to take 
+<br/>
+1. Make a `pull request` from your branch to `development`. 
+2. Describe the changes that you are shipping to development in the pull request description box that github provides. 
+3. Link the related tickets to the pull request. 
+4. After, invite `Brad` and `Sam` to review your pull request.<br/>
+_Linking issues and requesting reviewers attention can be done on the right pane of your PR interface on github_ <br/>
+<img src="./images/right-pane.png"/>
 
+
+_**Please note that if Brad and Sam are not available, feel free to tag any other developers available that might be free at that moment**_
+<br/>
+
+
+_**Notify all on slack**_<br/>
+Lastly, use the **bolt** icon in the  `frontend` slack channel to create a `pull request` notification for all as shown below. 
+
+<img src="./images/pr.png"/>
+
+You are all set now, enjoy your free time :confetti_ball: :rofl:
 
 
 
