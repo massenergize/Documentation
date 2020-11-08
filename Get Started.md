@@ -43,6 +43,10 @@ and simple instructions to how to use custom components that have been created.
 <br/>
 
 ### <a name="setting-your-env">CONFIGURING YOUR WORKING ENVIRONMENT </a>
+<br/>
+**Clone the `development` branch onto your pc locally**<br/>
+**Then `npm install` to get started right away**
+ <br/>
 At the time of writing, there are **five** working environments available in MassEnergize. These environments dictate the the kind of data you have access to, and interact with from the backend. You are free to tweak your configuration settings and interact with the data as you wish. <br/>
 **_However, please note that PROD, and CANARY, are not your playground. You may switch to them ONLY to view how real data may look with any new changes you might have made; for all other tests, thats what local and dev modes are for!_**<br/>
 #### How do I switch?
@@ -102,7 +106,7 @@ Lastly, use the **bolt** icon in the  `frontend` slack channel to create a `pull
 You are all set now, enjoy your free time :confetti_ball: :rofl:
 
 
-### <a href="me-board-flow">ME PROJECT BOARDS FLOW AND THEIR MEANINGS </a>
+### <a name="me-board-flow">ME PROJECT BOARDS FLOW AND THEIR MEANINGS </a>
 
 There are currently about 5 boards on the community portal project board on github. These boards are used to organize and indicate stages that issues have to go through in order to get fixed. 
 Where developers && testers place tickets may indicate whether or not a bug or an enhancement is being worked on, an issue can even be worked on, or a feature is ready to be tested. 
