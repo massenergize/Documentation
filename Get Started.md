@@ -1,11 +1,13 @@
+
+## Getting Started In MassEnergize As A Frontend Developer
 On this board, you will find all the necessary information needed to get started as a developer with making changes and building on anything on the **MassEnergize**
-user portal[**Made with React**]. This file will give directions to very tricky, and important files as well as details that make up the core functionality of the whole site. 
+user portal[**Made with React**]. This board will give directions to very tricky, and important files as well as details that make up the core functionality of the whole site. 
 <br/> Mind you, the information here is in no way going to take anyone through a **React**, it is just to document the structure of everything, where to find core files,
 and simple instructions to how to use custom components that have been created.
 
 ### TABLE OF CONTENT 
 * <a href="#file-to-page"> Which files show what page?  </a>
-* <a href="#"> Configuring your working environment [is_prod,is_local,is_canary, is_dev, is_sandbox] </a>
+* <a href="#setting-your-env"> Configuring your working environment [is_prod,is_local,is_canary, is_dev, is_sandbox] </a>
 * <a href="#"> MassEnergize components and how they work  </a>
 
 
@@ -51,5 +53,5 @@ Sandbox | `false` | `false` | `true`| `false`
 Local | `true` | `false` | `false` | `false`
 
 Dont get excited yet. Before you switch to local and expect magic to happen, 
-make sure you have followed <a href="https://massenergize.slite.com/p/note/KWfwNLonZsf4bfGD6CNcJq">this link on how to setup your local backend on ME </a>
-The other environments do not need any setup :fire:. However, due to a recent change ain authentication system, you may not be able to send data to the backend because of token issues. You should set your environment up locally.
+make sure you have followed <a href="https://massenergize.slite.com/p/note/KWfwNLonZsf4bfGD6CNcJq">this link on how to setup your local backend on ME </a><br/>
+The other environments do not need any setup :fire:. <br/>However, due to a recent change ain authentication system, you may not be able to send data to the backend because of token issues. You should set your environment up locally.
