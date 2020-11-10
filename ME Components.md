@@ -6,12 +6,13 @@ Below are a few components that have been created to suit MassEnergize's unique 
 * <a href="#me-radio-group">MERadioGroup</a>
 * <a href="#me-checkbox-group">MECheckboxGroup</a>
 * <a href="#me-file-selector">MEFileSelector</a>
-* <a href="#me-form-generator">MEFormGenerator </a>
+* <a href="#me-dropdown">MEDropdown </a>
 * <a href="#me-section">MESectionWrapper </a>
 * <a href="#me-modal">MEModal </a>
 * <a href="#me-chip-maker">MEChipMaker </a>
 * <a href="#me-card">MECard </a>
-* <a href="#me-dropdown">MEDropdown </a>
+* <a href="#me-form-generator">MEFormGenerator </a>
+
 
 NOTE: The below listed properties of each component are easily subject to change. While these docs are updated from time to time, there is a chance that somethings might have changed in  various places. 
 ### <a name ="me-button">MEBUTTON </a>
@@ -64,7 +65,7 @@ A component that takes an array of strings and renders each string as a radio bu
 **`containerStyle`**| Normal inline css styles for the container div |`Object` | Eg. `{{ height:30}}`
 **`onItemSelected`** | Returns the selected string value of the radio button everytime an item is selected| `function` | `(item)=> { console.log(item)}`
 **`data (required)`** |Array of string values| `Array of strings` | `["Home", "House", "Crib"]`
-**`dataValues (optional)`** |In the case where a different value should be returned when a radio button is checked, the values should be provided in this field. The `dataValues` field also accepts an an Array that should be the**same size as data** | `Array` | `["ValueForHome", "ValueForHouse","ValueForCrib"]` _**NB: data and dataValues here have the same array length of 3**_
+**`dataValues (optional)`** |In the case where a different value should be returned when a radio button is checked, the values should be provided in this field. The `dataValues` field also accepts an an Array that should be the **same size as data** | `Array` | `["ValueForHome", "ValueForHouse","ValueForCrib"]` _**NB: data and dataValues here have the same array length of 3**_
 
 
 ### <a name="me-checkbox-group">MECHECKBOXGROUP</a>
@@ -79,4 +80,44 @@ A component that takes an array of strings and renders each string as a checkbox
 **`containerStyle`**| Normal inline css styles for the container div |`Object` | Eg. `{{ height:30}}`
 **`onItemSelected`** | Returns all the items that have been selected and the just selected item as different params | `function` | `(allItems, justSelectedItem)=> { console.log(justSelectedItem)}`
 **`data (required)`** |Array of string values| `Array of strings` | `["Check1", "Check2", "Check3"]`
-**`dataValues (optional)`** |In the case where a different value should be returned when a checkbox is checked, the values should be provided in this field. The `dataValues` field also accepts an an Array that should be the**same size as data** | `Array` | `["ValueForCheck1", "ValueForCheck2","ValueForCheck3"]` _**NB: data and dataValues here have the same array length of 3**_
+**`dataValues (optional)`** |In the case where a different value should be returned when a checkbox is checked, the values should be provided in this field. The `dataValues` field also accepts an an Array that should be the **same size as data** | `Array` | `["ValueForCheck1", "ValueForCheck2","ValueForCheck3"]` _**NB: data and dataValues here have the same array length of 3**_
+
+
+### <a name="me-file-selector">MEFILESELECTOR</a>
+The MEFileSelector is a more polished and advance version of the normal HTML input file selector. It looks much better, it allows users to crop, and it resizes all it's images on the fly.  Available props include: 
+
+|Property| Description |Type |Values Or Examples
+-------------|-------|--------|-----|
+**`style`** | Normal inline react css handling.|`Object`| Eg. `{{ height:30}}`
+**`previewStyle`** | Normal inline react css used to modify the image tag that shows a preview of the user's selected image.|`Object`| Eg. `{{ color:"lime"}}`
+**`className`**| Predefined css classes |`String` | "som-random-css-class and-another-one"
+**`ratioWidth`**| Spcecify aspect ratio width for cropping box |`Number` | Eg. 4
+**`ratioHeight`**|Spcecify aspect ratio heigh for cropping box |`Number` | Eg. 3 |
+**`onFileSelected (required)`** | Returns a resized **FileObject** of the selected image. If user uses the cropping feature, it returns the cropped version instead with other important related data | `function` | `(data, aResetFunction)=> { console.log(data.croppedFile)}`
+**`maxWidth`** |Set the max width value of the cropping box| `Number` | Eg. 500
+**`maxHeight`** |Set the max height value of the cropping box| `Number` | Eg. 450
+**`name (required)`** |Name of field| `String` | "testibox_img_selector"
+**`showOverlay`** |Show a transaparent overlay over screen when in cropping mode| `boolean` | `true or false` *default = true*
+
+**DETAILS ON `ONFILESELECTED` PARAMETERS**
+The function returns `data`, which is a json object that contains a resized version of the just selected image, the original image, as well as some other size and file name details from the original file 
+
+```javascript 
+ {
+   originalFile: File ...{} // JS file object, 
+   originalSize:{ size:223389, text:"223KB"}
+   croppedFile: File ...{} // JS file object 
+   croppedSize: { size:32989, text:"30KB"}
+   originalFileName: "some-random-name-a-user-has-given-to-their-file.jpg"
+ }
+```
+The `OnFileSelected` function also returns a reset function as a second parameter, so that the component can be reset outside of itself.
+
+```javascript
+  <MEFileSelector 
+  onFileSelected ={(data,reset)=>{
+    //....... do this and that 
+    //... then clear everything 
+    reset();
+  }}>
+```
