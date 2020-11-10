@@ -67,7 +67,7 @@ A component that takes an array of strings and renders each string as a radio bu
 **`dataValues (optional)`** |In the case where a different value should be returned when a radio button is checked, the values should be provided in this field. The `dataValues` field also accepts an an Array that should be the**same size as data** | `Array` | `["ValueForHome", "ValueForHouse","ValueForCrib"]` _**NB: data and dataValues here have the same array length of 3**_
 
 
-### <a name="me-checkbox-group">MERADIOGROUP</a>
+### <a name="me-checkbox-group">MECHECKBOXGROUP</a>
 A component that takes an array of strings and renders each string as a checkbox. On selection, it returns the all the checked items, and the currently selected option.  
 
 |Property| Description |Type |Values Or Examples
