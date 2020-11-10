@@ -99,9 +99,9 @@ The MEFileSelector is a more polished and advance version of the normal HTML inp
 **`name (required)`** |Name of field| `String` | "testibox_img_selector"
 **`showOverlay`** |Show a transaparent overlay over screen when in cropping mode| `boolean` | `true or false` *default = true*
 
-**DETAILS ON `ONFILESELECTED` PARAMETERS**
-The function returns `data`, which is a json object that contains a resized version of the just selected image, the original image, as well as some other size and file name details from the original file 
-
+**Details on `onFileSelected` parameters**<br/>
+The function returns `data`, which is a json object that contains a resized version of the just selected image, the original image, as well as some other size and file name details from the original file <br/>
+**NB: When the user uses the cropper on their image, the resized and cropped image  can be accessed from the `croppedFile` field. If the user does not use the cropper, the image still gets resized, but not cropped and is still accessed from the `croppedFile` field**. 
 ```javascript 
  {
    originalFile: File ...{} // JS file object, 
