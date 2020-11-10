@@ -118,6 +118,36 @@ The `OnFileSelected` function also returns a reset function as a second paramete
   onFileSelected ={(data,reset)=>{
     //....... do this and that 
     //... then clear everything 
-    reset();
+    reset(); //... you might want to save this somewhere for last stages.LOL!
   }}>
+```
+
+### <a name="me-dropdown">MEDROPDOWN</a>
+Need to display a list of items that user will choose from? Try the MEDropdown. 
+
+|Property| Description |Type |Values Or Examples
+-------------|-------|--------|-----|
+**`style`** | Normal inline react css handling.|`Object`| Eg. `{{ height:30}}`
+**`className`**| Predefined css classes |`String` | "som-random-css-class and-another-one"
+**`onItemSelected`** | Returns the value of the item that has been selected | `function` | `(item)=> { console.log(item)}`
+**`data (required)`** |Array of string values| `Array of strings` | `["First list item", "Second list item", "Third list item"]`
+**`dataValues (optional)`** |In the case where a different value should be returned when an item is selected, the values should be provided in this field. The `dataValues` field also accepts an an Array that should be the **same size as data** | `Array` | `["Value for item1", "Value for item2","Value for item3"]` _**NB: data and dataValues here have the same array length of 3**_
+
+**More Details** <br/>
+```javascript
+()=>{
+  const data = ["Shoes", "Bags","Shirts"] // items for sale
+  const dataValues = [100,450,5] // prices in USD
+
+// If a user selectes Bags from the dropdown GUI
+  <MEDropdown 
+    data = {data} 
+    dataValues={dataValues} 
+    onFileSelected={(value)=>{
+    console.log(value) // value will be equal to === 450, not "Bags" 
+    //value would only be === "Bags" if the dataValues field was not provided
+  }}>
+
+}
+
 ```
