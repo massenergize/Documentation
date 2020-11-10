@@ -9,7 +9,6 @@ Below are a few components that have been created to suit MassEnergize's unique 
 * <a href="#me-dropdown">MEDropdown </a>
 * <a href="#me-section">MESectionWrapper </a>
 * <a href="#me-modal">MEModal </a>
-* <a href="#me-chip-maker">MEChipMaker </a>
 * <a href="#me-card">MECard </a>
 * <a href="#me-form-generator">MEFormGenerator </a>
 
@@ -26,7 +25,7 @@ Has all the features that the normal button has and accepts all the default prop
 **`mediaType`**| Specify what kind of media type to be displayed with the button text | `String` | `"icon"` or  `"image"`
 **`icon`** | Media content to be displayed if mediaType is set | `String` or `Blob` | `fa fa-check` or `www.placeholder.com/images/450` or `Imported Image` 
 **`iconStyle`** | Inline styles to modify the way the icon is displayed|`Object` | `{{ color:"green", size:45}}`
-**`href` or `to`** |  Makes the button behave as an anchor link, while maintaining its button look | `String` | `www.massenergize.com` 
+**`href` or `to`** |  Makes the button behave as an anchor link, while maintaining its button look | `String` | `www.massenergize.org` 
 **`variation`** | Switch between three different button designs | `String` | `accent`, `union`, `normal`  *(default = "normal")*
 
 ### <a name="me-textfield">METEXTFIELD</a>
@@ -163,8 +162,35 @@ Just small custom accordion that helps group related items. <br/>
 **`className`**| Predefined css classes |`String` | "som-random-css-class and-another-one"
 **`collapsed`** | Whether or not the content div should be collapsed | `boolean` | `true of false` *default = false* 
 **`badgeText`** |A string that should be displayed on as the title of the section | `String` | Eg. "Completed Actions"
-**`containerClassName`**| Predefined css classes used to style the div that holds all the radio buttons. |`String` | "som-random-css-class and-another-one"
+**`containerClassName`**| Predefined css classes used to style the div that holds the entire wrapper. |`String` | "som-random-css-class and-another-one"
 **`containerStyle`**| Normal inline css styles for the container div |`Object` | Eg. `{{ height:30}}`
 
 **More Details**<br/>
 <img src="./images/sw.png">
+
+### <a name="me-modal">MEMODAL</a>
+|Property| Description |Type |Values Or Examples
+-------------|-------|--------|-----|
+**`style`** | Normal inline react css handling.|`Object`| Eg. `{{ height:30}}`
+**`className`**| Predefined css classes |`String` | "som-random-css-class and-another-one"
+**`closeModal`** | Function to close modal | `function` | `()=>{}`
+**`badgeText`** |A string that should be displayed on as the title of the section | `String` | Eg. "Completed Actions"
+**`containerClassName`**| Predefined css classes used to style the div that holds the whole modal div. |`String` | "som-random-css-class and-another-one"
+**`containerStyle`**| Normal inline css styles for the container div |`Object` | Eg. `{{ height:30}}`
+**`showOverlay`**| Show or disable background overlay |`boolean` | Eg. `true of false`
+
+**More Deatils**
+
+<img src="images/modal-good.png"/>
+
+
+### <a name="me-card">MECARD</a>
+A neat and nicely elevated card that can be used for all kinds of purposes on the site.
+
+|Property| Description |Type |Values Or Examples
+-------------|-------|--------|-----|
+**`style`** | Normal inline react css handling.|`Object`| Eg. `{{ height:30}}`
+**`className`**| Predefined css classes |`String` | "som-random-css-class and-another-one"
+**`onClick`** | Add an onclick fxn to make the card behave as a button | `function` | `()=>{}`
+**`to or href`** |Add a string URL to make card behave as a link | `String` | Eg. "www.massenergize.or"
+
