@@ -176,7 +176,7 @@ Just small custom accordion that helps group related items. <br/>
 **`containerStyle`**| Normal inline css styles for the container div |`Object` | Eg. `{{ height:30}}`
 **`showOverlay`**| Show or disable background overlay |`boolean` | Eg. `true of false`
 
-**More Deatils**
+**More Details**
 
 <img src="images/modal-good.png"/>
 
@@ -189,5 +189,5 @@ A neat and nicely elevated card that can be used for all kinds of purposes on th
 **`style`** | Normal inline react css handling.|`Object`| Eg. `{{ height:30}}`
 **`className`**| Predefined css classes |`String` | "som-random-css-class and-another-one"
 **`onClick`** | Add an onclick fxn to make the card behave as a button | `function` | `()=>{}`
-**`to or href`** |Add a string URL to make card behave as a link | `String` | Eg. "www.massenergize.or"
+**`to or href`** |Add a string URL to make card behave as a link | `String` | Eg. "www.massenergize.org"
 
