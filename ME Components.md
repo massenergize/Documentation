@@ -20,7 +20,7 @@ Has all the features that the normal button has and accepts all the default prop
 -------------|-------|--------|-----|
 **`Style`** | Normal inline react css handling.|`Object`| Eg. `{{ height:40}}`
 **`className`**| Predefined css classes |`String` | "som-random-css-class and-another-one"
-**`onClick`** | onClick handler. Provides **`event`** param | `function` | `(event)=> { e.preventDefault() }`
+**`onClick`** | onClick handler. Provides **`event`** param | `function` | `(event)=> { event.preventDefault() }`
 **`mediaType`**| Specify what kind of media type to be displayed with the button text | `String` | `"icon"` or  `"image"`
 **`icon`** | Media content to be displayed if mediaType is set | `String` or `Blob` | `fa fa-check` or `www.placeholder.com/images/450` or `Imported Image` 
 **`iconStyle`** | Inline styles to modify the way the icon is displayed|`Object` | `{{ color:"green", size:45}}`
@@ -41,5 +41,27 @@ Massenergize custom input box. Fields in <span style="color:red">red </span> are
 **`readonly`** | Set field to be readonly | `boolean` | `true` or `false`
 **`history`** | Remember previous inputs | `boolean` | `true` or `false`
 **`isRequired`** | Set as a compulsory field | `boolean` | `true` or `false`
-**<span style="color:red">name </span>** | Name of field | `String` | `input_box`
+**<span style="color:red">name (required) </span>** | Name of field | `String` | `input_box`
 **`placeholder`** | Placeholder text | `String` | `Enter text here...`
+### <a name="me-textview">TEXTVIEW</a>
+Custom paragraph component for MassEnergize.   
+|Property| Description |Type |Values Or Examples
+-------------|-------|--------|-----|
+**`style`** | Normal inline react css handling.|`Object`| Eg. `{{ height:30}}`
+**`className`**| Predefined css classes |`String` | "som-random-css-class and-another-one"
+**`onChange`** | onChange handler. Provides **`event`** param | `function` | `(event)=> { console.log(event.target.value)}`
+**`type`**| Choose between a normal <p> or <small> tag | `String`  | `p` or `paragraph` or `small`
+
+
+### <a name="me-radio-group">MERADIOGROUP</a>
+A component that takes an array of strings and renders each string as a radio button. On selection, it returns the string value of the selected radio button. Returns null, if unslected. 
+
+|Property| Description |Type |Values Or Examples
+-------------|-------|--------|-----|
+**`style`** | Normal inline react css handling.|`Object`| Eg. `{{ height:30}}`
+**`className`**| Predefined css classes |`String` | "som-random-css-class and-another-one"
+**`containerClassName`**| Predefined css classes used to style the div that holds all the radio buttons. |`String` | "som-random-css-class and-another-one"
+**`containerStyle`**| Normal inline css styles for the container div |`Object` | Eg. `{{ height:30}}`
+**`onItemSelected`** | Returns the selected string value of the radio button everytime an item is selected| `function` | `(item)=> { console.log(item)}`
+**`data`** |Array of string values| `Array of strings` | `["Home", "House", "Crib"]`
+**`dataValues (optional)`** |In the case where a different value should be returned when a radio button is checked, the values should be provided in this field. The `dataValues` field also accepts an an Array that should be the**same size as data** | `Array` | `["ValueForHome", "ValueForHouse","ValueForCrib"]` _**NB: data and dataValues here have the same array length of 3**_
