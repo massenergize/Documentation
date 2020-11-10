@@ -63,5 +63,20 @@ A component that takes an array of strings and renders each string as a radio bu
 **`containerClassName`**| Predefined css classes used to style the div that holds all the radio buttons. |`String` | "som-random-css-class and-another-one"
 **`containerStyle`**| Normal inline css styles for the container div |`Object` | Eg. `{{ height:30}}`
 **`onItemSelected`** | Returns the selected string value of the radio button everytime an item is selected| `function` | `(item)=> { console.log(item)}`
-**`data`** |Array of string values| `Array of strings` | `["Home", "House", "Crib"]`
+**`data (required)`** |Array of string values| `Array of strings` | `["Home", "House", "Crib"]`
 **`dataValues (optional)`** |In the case where a different value should be returned when a radio button is checked, the values should be provided in this field. The `dataValues` field also accepts an an Array that should be the**same size as data** | `Array` | `["ValueForHome", "ValueForHouse","ValueForCrib"]` _**NB: data and dataValues here have the same array length of 3**_
+
+
+### <a name="me-checkbox-group">MERADIOGROUP</a>
+A component that takes an array of strings and renders each string as a checkbox. On selection, it returns the all the checked items, and the currently selected option.  
+
+|Property| Description |Type |Values Or Examples
+-------------|-------|--------|-----|
+**`style`** | Normal inline react css handling.|`Object`| Eg. `{{ height:30}}`
+**`fineTuneStyle`** | Normal inline react css handling used to modify the styling of the box design that represents the checkmark.|`Object`| Eg. `{{ color:"lime"}}`
+**`className`**| Predefined css classes |`String` | "som-random-css-class and-another-one"
+**`containerClassName`**| Predefined css classes used to style the div that holds all the checkboxes. |`String` | "som-random-css-class and-another-one"
+**`containerStyle`**| Normal inline css styles for the container div |`Object` | Eg. `{{ height:30}}`
+**`onItemSelected`** | Returns all the items that have been selected and the just selected item as different params | `function` | `(allItems, justSelectedItem)=> { console.log(justSelectedItem)}`
+**`data (required)`** |Array of string values| `Array of strings` | `["Check1", "Check2", "Check3"]`
+**`dataValues (optional)`** |In the case where a different value should be returned when a checkbox is checked, the values should be provided in this field. The `dataValues` field also accepts an an Array that should be the**same size as data** | `Array` | `["ValueForCheck1", "ValueForCheck2","ValueForCheck3"]` _**NB: data and dataValues here have the same array length of 3**_
