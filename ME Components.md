@@ -14,7 +14,8 @@ Below are a few components that have been created to suit MassEnergize's unique 
 * <a href="#me-form-generator">MEFormGenerator </a>
 
 
-NOTE: The below listed properties of each component are easily subject to change. While these docs are updated from time to time, there is a chance that somethings might have changed in  various places. 
+NOTE: The below listed properties of each component are easily subject to change. While these docs are updated from time to time, there is a chance that somethings might have changed in  various places. Just a heads up.  
+**Also, feel free to change anything in the code if need be! Just remember to document as well!**
 ### <a name ="me-button">MEBUTTON </a>
 Has all the features that the normal button has and accepts all the default props as well. Comes with accepted button styles out of the box, but open to any kind of tweaks via the provided channels below.
 |Property| Description |Type |Values Or Examples
@@ -151,3 +152,19 @@ Need to display a list of items that user will choose from? Try the MEDropdown.
 }
 
 ```
+
+### <a name="me-section">MESECTIONWRAPPER</a>
+Just small custom accordion that helps group related items. <br/> 
+
+
+|Property| Description |Type |Values Or Examples
+-------------|-------|--------|-----|
+**`style`** | Normal inline react css handling.|`Object`| Eg. `{{ height:30}}`
+**`className`**| Predefined css classes |`String` | "som-random-css-class and-another-one"
+**`collapsed`** | Whether or not the content div should be collapsed | `boolean` | `true of false` *default = false* 
+**`badgeText`** |A string that should be displayed on as the title of the section | `String` | Eg. "Completed Actions"
+**`containerClassName`**| Predefined css classes used to style the div that holds all the radio buttons. |`String` | "som-random-css-class and-another-one"
+**`containerStyle`**| Normal inline css styles for the container div |`Object` | Eg. `{{ height:30}}`
+
+**More Details**<br/>
+<img src="./images/sw.png">
