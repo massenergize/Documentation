@@ -210,7 +210,7 @@ MECustom component that generates a form based on an array of **jsons**
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------- | ---------- | ------------------------------------------------------------------- |
 | **`style`**               | Normal inline react css handling.                                                                                     | `Object`   | Eg. `{{ height:30}}`                                                |
 | **`className`**           | Predefined css classes                                                                                                | `String`   | "som-random-css-class and-another-one"                              |
-| **`onSubmit (required)`** | Provides the form data onSubmit Values provided (`event`,`formData`,`resetForm`)                                      | `function` | `(event,formData,resetForm)=>{}`                                    |
+| **`onSubmit (required)`** | Provides the form data on submission. Values provided (`event`,`formData`,`resetForm`)                                      | `function` | `(event,formData,resetForm)=>{}`                                    |
 | **`animate`**             | Animate form on load                                                                                                  | `Boolean`  | Eg. `true`, `false`                                                 |
 | **`elevate`**             | Elevate the form card                                                                                                 | `Boolean`  | Eg. `true`, `false`                                                 |
 | **`info`**                | Field that allows external notification to be passed into the form and displayed on the form. Types (**BAD OR GOOD**) | `Object`   | Eg. `{type:"BAD",text:"Sorry could not submit",icon:"fa fa-times"}` |
@@ -221,14 +221,14 @@ MECustom component that generates a form based on an array of **jsons**
 Given any json object in the fields array, the form generator will respond with a correspoding MEComponents as needed.
 Types of fields available.
 
-1. `input` = <a href="#me-textfield">METextField</a>
-2. `textarea` = <a href="#me-textfield">METextArea</a>
-3. `dropdown` = <a href="#me-dropdown">MEDropdown</a>
-4. `autocomplete` = <a href="#">MEAutoComplete</a>
-5. `checkbox-group` = <a href="#me-checkbox-group">MECheckboxes</a>
-6. `radio-group` = <a href="#me-radio-broup">MERadioButtons</a>
-7. `section` = <a href="#">Provides a separator in the form</a>
-8. `file` = <a href="#me-file-selector">MEFileSelector</a>
+* `input` = <a href="#me-textfield">METextField</a>
+* `textarea` = <a href="#me-textfield">METextArea</a>
+* `dropdown` = <a href="#me-dropdown">MEDropdown</a>
+* `autocomplete` = <a href="#">MEAutoComplete</a>
+* `checkbox-group` = <a href="#me-checkbox-group">MECheckboxes</a>
+* `radio-group` = <a href="#me-radio-broup">MERadioButtons</a>
+* `section` = <a href="#">Provides a separator in the form</a>
+* `file` = <a href="#me-file-selector">MEFileSelector</a>
 
 This is what a page with a dropdown, input, and a textarea will look like
 <br/>**ONLY `type` is unique to form generator. The rest of the properties are the same as the requirements of the various components defined above**
