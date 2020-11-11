@@ -1,1 +1,1 @@
-### COMING SOON :ok_Hand:
+### COMING SOON :ok_hand:
