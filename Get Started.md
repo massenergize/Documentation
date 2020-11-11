@@ -10,7 +10,7 @@ and simple instructions to how to use custom components that have been created.
 * <a href="#setting-your-env"> Configuring Your Working Environment(is_prod,is_local,is_canary, is_dev, is_sandbox) </a>
 * <a href="#developer-workflow"> ME Developer Workflow and Push Protocol</a>
 * <a href="https://github.com/massenergize/Documentation/blob/user-portal-docs/ME%20Components.md"> What To Know About ME Custom Components </a>
-* <a href="#"> What Logic Makes Each Page Tick! </a>
+* <a href="https://github.com/massenergize/Documentation/blob/user-portal-docs/How%20It%20All%20Happens.md"> What Logic Makes Each Page Tick! </a>
 * <a href="#me-board-flow"> ME Project Boards And What They Mean </a>
 
 
